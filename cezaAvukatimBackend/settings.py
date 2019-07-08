@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'zk&7q^gn6p_5arjekwl)711&tb3udt1@slf%3=!x=sc5@@vf@c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['api.cezavukatim.com', '142.93.170.96']
 
