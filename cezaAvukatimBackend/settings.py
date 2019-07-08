@@ -25,7 +25,7 @@ SECRET_KEY = 'zk&7q^gn6p_5arjekwl)711&tb3udt1@slf%3=!x=sc5@@vf@c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api.cezavukatim.com', '142.93.170.96']
 
 
 # Application definition
@@ -83,8 +83,12 @@ WSGI_APPLICATION = 'cezaAvukatimBackend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cezaavukatimdatabase',
+        'USER': 'cezaavukatimdatabaseuser',
+        'PASSWORD': 'berk693693',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
